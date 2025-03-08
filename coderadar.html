@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    } 
+    body{
+        display: flex;
+        
+        justify-content: center;
+        background-color: rgb(44, 230, 230);
+        width: 100%;
+        height: 100vh;
+        align-items: center;
+        font-family: "poppin",sans-serif;
+    }
+    .container{
+        width: 650px;
+         height: 450px;
+        background-color: white;
+        border: none;
+        border-radius: 10px;
+    }
+    .container h1{
+        text-align: center;
+        margin-top: 25px;
+        font-size: 39px;
+        font-weight: 700;
+        
+    }
+    .container p{
+        text-align: center;
+        color: rgb(127, 136, 136);
+        font-size: 15px;
+        margin-top: 10px;
+        
+    }
+    .timefunction{
+        display: flex;
+        justify-content: center;
+        margin-top:15px;
+        gap: 15px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .value{
+        width: 110px;
+        height: 127px;
+        border-radius: 8px;
+        box-shadow: 5px 5px 10px rgb(44, 230, 230);
+        
+    }
+    #days{
+        font-size: 50px;
+        font-weight: 700;
+        color: rgb(82, 48, 233);
+    }
+    #Hours{
+        font-size: 50px;
+        font-weight: 700;
+         color: rgb(82, 48, 233);
+    }
+    #Minutes{
+        font-size: 50px;
+        font-weight: 700;
+         color: rgb(82, 48, 233);
+    }
+    #Seconds{
+        font-size: 50px;
+        font-weight: 700;
+        color: rgb(82, 48, 233);
+    }
+    @media (max-width:500px){
+        .timefunction{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .container{
+            height: 600px;
+            width: 95%;
+        }
+        body{
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .button{
+            width: 90%;
+            height: 200px;
+            display: flex;
+            
+            margin-top: 10px;
+        }
+    }
+    .button{
+        
+        width: 200px;
+        height: 450px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content:space-evenly ;
+        font-family: "poppin",sans-serif;
+        margin-left: 20px;
+    }
+    .btn{
+        font-size: 25px;
+        font-weight: 600;
+        text-align: center;
+        background-color: rgb(82,48,233);
+        color: white;
+        padding: 10px;
+        border-radius: 10px;
+        cursor: pointer;
+        box-shadow: 5px 5px 10px rgb(82,48,233) ;
+    }
+    </style>
+</head>
+<body>
+ <div class="container">
+  <h1>Website Under Maintenance</h1>
+  <p>We're working hard to bring somethigs to you</p>
+  <div class="timefunction">
+    <div class="value">
+        <p id="days">00</p>
+        <p>Days</p>
+    </div>
+    <div class="value">
+        <p id="Hours">00</p>
+        <p>Hours</p>
+    </div>
+    <div class="value">
+        <p id="Minutes">00</p>
+        <p>Minutes</p>
+    </div>
+    <div class="value">
+        <p id="Seconds">00</p>
+        <p>Seconds</p>
+    </div>
+  </div>
+  <h1>Stay Tuned !</h1>
+  <p style="margin-top: 30px;">@ 2024 Code Radar.All right reserved</p>
+ </div>  
+ <div class="button">
+    <div class="btn" id="start">Start</div>
+    <div class="btn" id="stop">Stop</div>
+    <div class="btn" id="reset">Reset</div>
+ </div>
+ <script src="time.js"></script>
+</body>
+</html>
